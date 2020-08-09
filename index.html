@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id='welcomeDiv'>
+        <h1>Welcome to Online Quiz</h1>
+        <!-- <h4>Enter your details to proceed</h4> -->
+        <input id='userName' type="text" required pattern="[a-zA-ZÀ-ž ]+" maxlength="30" placeholder="Type your name">
+        <button id='proceedBtn' onclick="proceedToQuiz()">Proceed</button>
+
+    </div>
+
+    <div id='questionDiv'>
+        <p id='qs'>Q</p>
+
+        <div id='ansDiv' class='list-group'>
+            <label class='list-group-item'><input type="radio" class='opt' name='opt'>a</label>
+            <label class='list-group-item'><input type="radio" class='opt' name='opt'>b</label>
+            <label class='list-group-item'><input type="radio" class='opt' name='opt'>c</label>
+            <label class='list-group-item'><input type="radio" class='opt' name='opt'>d</label>
+        </div>
+
+        <button id='nextQsBtn' onclick="goToNextQs()">Next</button>
+
+    </div>
+
+    <div id="resultDiv">
+        <p id="res" ></p>
+
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
